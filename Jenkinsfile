@@ -8,7 +8,7 @@ pipeline {
     }
     environment {
         //SCANNER_HOME = tool 'sonar-scanner'
-        APP_NAME = "finaltodoapp"
+        APP_NAME = "mytodoapp"
         RELEASE = "1.0.0"
         DOCKER_USER = "georgeao"
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"
