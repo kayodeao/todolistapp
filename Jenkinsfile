@@ -10,7 +10,7 @@ pipeline {
         //SCANNER_HOME = tool 'sonar-scanner'
         APP_NAME = "mytodoapp"
         RELEASE = "1.0.0"
-        DOCKER_USER = "georgeao"
+        DOCKER_USER = "kayodeao"
         IMAGE_NAME = "${DOCKER_USER}/${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
         DOCKER_REGISTRY_CREDENTIALS = 'docker' // Credentials ID for Docker registry
@@ -76,7 +76,7 @@ pipeline {
                          - Build URL: ${env.BUILD_URL}
 
                          """,
-                to: 'george@aopartners.io',
+                to: 'test@email.io',
                 //attachmentsPattern: 'trivyfs.txt, trivyimage.txt'
             )
         }
