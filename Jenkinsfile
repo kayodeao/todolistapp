@@ -53,7 +53,7 @@ pipeline {
                     sh '''
                         git clone https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME}.git
                         cd ${GIT_REPO_NAME}
-                        git config user.email "kayode@aopartnersng.com"
+                        git config user.email "test@mail.com"
                         git config user.name "${GIT_USER_NAME}"
                         BUILD_NUMBER=${BUILD_NUMBER}
                         sed -i "s|image: ${DOCKER_USER}/${APP_NAME}:.*|image: ${DOCKER_USER}/${APP_NAME}:${IMAGE_TAG}|g" kubernetes/deployment.yaml
